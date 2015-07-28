@@ -22,7 +22,8 @@
             </button>
         </ion-header-bar>
         
-        <ion-content>
+        <!-- This ID handles touch gesture -->
+        <ion-content id="eventPlaceholder" has-bouncing="false">
             <div class="list card" data-ng-repeat="p in posts"> 
                 <div class="item item-avatar-left">
                     <img src="{{ p.author. avatar_URL}}" alt="">
@@ -38,7 +39,7 @@
                 </div>
             </div>
         </ion-content>
+
     </body>
-    
-    
+ 
 </html>
